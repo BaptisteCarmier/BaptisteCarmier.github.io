@@ -20,6 +20,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide (J'ai oublié t
 ###############################################
 
 navbar-links:
+  Home : "home"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
