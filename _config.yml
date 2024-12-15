@@ -294,7 +294,6 @@ exclude:
   - screenshot.png
   - docs/
   - _posts/
-  - index.html
 
 plugins:
   - jekyll-paginate

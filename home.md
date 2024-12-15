@@ -3,7 +3,6 @@ layout: page
 title: WHO'S IN THE SPOTLIGHTS
 subtitle: by Ecureuils Cosmiques 24
 cover-img: /assets/img/header_ada.jpg
-share-img: /assets/img/header_ada.jpg
 
 author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide (J'ai oublié ton nom), Etienne De Labarrière
 ---
