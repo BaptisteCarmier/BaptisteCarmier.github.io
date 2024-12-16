@@ -27,11 +27,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 Et on rajoute une image de crêpe centré
 </div>
 
-{% include  /heatmap_female_actors.html%}
+![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
 <div style="text-align: justify;">
 Mais on peut aussi la centrer ! 
 </div>
 
-{% https://baptistecarmier.github.io//assets/img_html/heatmap_female_actors.html %}
+{% https://beautifuljekyll.com/assets/img_html/heatmap_female_actors.html %}
 
