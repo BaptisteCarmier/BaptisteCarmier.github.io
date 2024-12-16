@@ -33,4 +33,4 @@ Et on rajoute une image de crêpe
 Mais on peut aussi la centrer ! 
 </div>
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+{% include heatmap_female_actors.html%} {: .mx-auto.d-block :}
