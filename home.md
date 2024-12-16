@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: WHO'S IN THE SPOTLIGHTS
 subtitle: by Ecureuils Cosmiques 24
 cover-img: /assets/img/header_ada.jpg
