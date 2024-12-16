@@ -27,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 Et on rajoute une image de crêpe
 </div>
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+{% include heatmap_female_actors.html%} 
 
 <div style="text-align: justify;">
 Mais on peut aussi la centrer ! 
