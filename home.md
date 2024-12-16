@@ -2,7 +2,7 @@
 layout: home
 title: WHO'S IN THE SPOTLIGHTS
 subtitle: by Ecureuils Cosmiques 24
-cover-img: /assets/img/header_ada.jpg
+cover-img: /assets/img/header_ada.png
 
 author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide (J'ai oublié ton nom), Etienne De Labarrière
 ---
@@ -24,13 +24,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 ## Un titre de seconde classe parceque pourquoi pas ?
 
 <div style="text-align: justify;">
-Et on rajoute une image de crêpe
+Et on rajoute une heatmap, par définition elle est centrée
 </div>
 
 {% include heatmap_female_actors.html%} 
-
-<div style="text-align: justify;">
-Mais on peut aussi la centrer ! 
-</div>
-
-{% include heatmap_female_actors.html%} {: .mx-auto.d-block :}
