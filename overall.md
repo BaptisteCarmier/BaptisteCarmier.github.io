@@ -21,7 +21,7 @@ Our dataset comes from the CMU [Movie Summary Corpus](https://www.cs.cmu.edu/~ar
 It is a well known fact that there are differences between actors and actresses ages. We wanted to test if this is true. On the barplot we can observe it and a t-test was made to check if the difference was significative. A p-value inferior to 0.5 was found indicating that actresses are on average younger than actors.
 </div>
 
-{% include heatmap_female_actors.html %}
+{% include Age_and_gender.html %}
 
 # Womens representation in different genres
 
