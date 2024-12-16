@@ -20,9 +20,8 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 ###############################################
 
 navbar-links:
-  Home : "home"
-  About Me: "aboutme"
-  Index: "index"
+  Home : "index"
+  About Us: "aboutus"
   Resources:
     - CMU movie dataset: "https://www.cs.cmu.edu/~ark/personas/"
     - ADA course: "https://epfl-ada.github.io/teaching/fall2024/cs401/"
