@@ -24,14 +24,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 ## Un titre de seconde classe parceque pourquoi pas ?
 
 <div style="text-align: justify;">
-Et on rajoute une image de crêpe centré
+Et on rajoute une image de crêpe
 </div>
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
 
 <div style="text-align: justify;">
 Mais on peut aussi la centrer ! 
 </div>
 
-{% include heatmap_female_actors.html %}
-
+![heatmap](https://beautifuljekyll.com/assets/img_html/heatmap_female_actors.html){: .mx-auto.d-block :}
