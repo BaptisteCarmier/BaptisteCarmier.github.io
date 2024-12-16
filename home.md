@@ -33,5 +33,5 @@ Et on rajoute une image de crêpe centré
 Mais on peut aussi la centrer ! 
 </div>
 
-{% https://beautifuljekyll.com/assets/img_html/heatmap_female_actors.html %}
+{% include heatmap_female_actors.html %}
 
