@@ -21,7 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 **Note:** This is a notification box.
 
 
-## Un titre de seconde classe parceque pourquoi pas ?
+## Un titre de seconde classe parceque ?
 
 <div style="text-align: justify;">
 Et on rajoute une image de crêpe centré
