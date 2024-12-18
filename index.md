@@ -52,5 +52,9 @@ Changer le titre et écrire les paragraphes... Map interactive, est-ce que ça m
 
 {% include women_representation_map.html%} 
 
+# Biases
+
+{% include boxplot_bias.html%} 
+
 # Conclusion
 
