@@ -13,16 +13,16 @@ Gender equality and representation has been a core issue since the 20th and 21th
 
 ### Datasets
 <div style="text-align: justify;">
-For this project we mainly used the CMU Movie Summary Corpus dataset, which contains 42,306 movie plot summaries, sourced from Wikipedia. It also provides metadata for each movies such as title, release years, box office revenue, etc. The dataset also includes characters characteristic and so acotrs labels exists such as gender, age, ethnicity, etc. 
+For this project we mainly used the CMU Movie Summary Corpus dataset, which contains 42,306 movie plot summaries, sourced from Wikipedia. It also provides metadata for each movies such as title, release years, box office revenue, etc. The dataset also includes characters characteristic and so actors labels exists such as gender, age, ethnicity, etc. <br>
 
-In parallel, we also used 
+In parallel, we also used the `names-dataset` Python library to reconstruct missing genres, as well as demographis data ([Our World in Data Population & Demography Explorer](https://ourworldindata.org/explorers/population-and-demography)) to analyze country level representation in films.<br>
 
-For further information 
+For further details on each dataset please check the [datasets page](https://baptistecarmier.github.io/datasets/)
+
 </div>
 
-{: .blog-post blockquote}
+{: .box-note}
 **Note:** Mosts graphs are interactive allowing you to explore details about it.
-Et si j'écris un truc là ça va ou ? 
 
 # Naive Analysis
 ## Un subtitle
