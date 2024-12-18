@@ -19,6 +19,9 @@ For further details on each dataset please check the [datasets page](https://bap
 {: .box-note}
 **Note:** Mosts graphs are interactive allowing you to explore details about it.
 
+# Some observations 
+As
+
 # Naive Analysis
 ## Un subtitle
 
