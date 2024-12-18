@@ -28,10 +28,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 # Better Analysis
 
 <div style="text-align: justify;">
+Graph des régions (pas obligé)
+</div>
+
+{% include bar_chart_region_actors.html%} 
+
+<div style="text-align: justify;">
 Et on rajoute une heatmap, par définition elle est centrée
 </div>
 
 {% include heatmap_female_actors.html%} 
+
+# Analysis by country
+
+<div style="text-align: justify;">
+Changer le titre et écrire les paragraphes... Map interactive, est-ce que ça marche?
+</div>
+
+{% include women_representation_map.html%} 
 
 # Conclusion
 
