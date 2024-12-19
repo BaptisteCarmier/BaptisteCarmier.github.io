@@ -11,6 +11,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     Gender equality and representation has been a core issue since the 20th and 21th century. Those centuries are characterized by a lot of movement and progress towards women's rights, for example in France the legalization of abortion in 1975. Knowing that it is commonly said that <em>“cinema is not only an art form but also a mirror of society”</em>, the question of gender representation is directly linked to the movie industry and it reflects how we perceive the world. In the movie industry, a lot of norms exist and they could change from country to country because more are conservatives while the others are progressive. Therefore an analysis should be done to assess those norms and to understand to what extent they impact movie creation and what are their potential causes. Mentalities also evolve with time and analyzing those different standards of evolution is necessary.
 </div>
 
+##### Datasets
 <div style="text-align: justify;">
   For this project we mainly used the <a href="https://www.cs.cmu.edu/~ark/personas/">CMU Movie Summary Corpus</a>, which contains 42,306 movie plot summaries, sourced from Wikipedia. It also provides metadata for each movie such as title, release years, box office revenue, etc. The dataset also includes characters' characteristics and actors' labels such as gender, age, ethnicity, etc.<br>
   
