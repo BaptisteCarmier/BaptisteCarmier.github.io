@@ -18,3 +18,5 @@ helping us infer actors' genders as male or female. Install it via: `pip install
 we use demographic data from the [Our World in Data Population & Demography Explorer](https://ourworldindata.org/explorers/population-and-demography).
 This dataset provides the male and female population for selected countries from 1950 to 2023,
 enabling us to compare movie industry gender representation with actual demographic distributions. 
+
+- We used the `CPI.csv` dataset, as the price of the box office needed to be rescaled according to the value of the dollar at the year of interest. It is sourced from [Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCNS) | FRED | St. Louis Fed](https://fred.stlouisfed.org/series/CPIAUCNS#0), which source is the US Bureau Labor of Statistics. This dataset contains the Consumer Price Index for the years between 1913 and 2024 that are adjusted to 1982-1984, which are the base years. 
