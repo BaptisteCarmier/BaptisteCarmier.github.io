@@ -38,6 +38,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl ex, tem
 
 # Better Analysis
 
+## Matching the data 
+
+Why have unbalanced casts ? 
+Since we observed that the women are underrepresented in the movie industry, we want to analyze if there is an economic reason for this imbalance in the actor casts. To begin, we get an insight on whether movies with heterogeneous cast distribution perform better than balanced one by having a look to the plot of the distribution of the movies’ box office for these two groups : 
+
+{% include before_matching_movies.html%}
+
+The distribution appears more or less similar, with a slight tendency for higher box office revenues in movies with unbalanced casts. To better analyze the impact of gender balance in movie casts, we use propensity score matching to compare movies that are more “comparable” according to their characteristics. This method ensures that the two groups are comparable by creating a matched dataset where we can more accurately assess differences in outcomes, such as box office success, that may be influenced by the gender balance of the cast. The plot below shows the same distribution but now with matched movies : 
+
+
 <div style="text-align: justify;">
 Graph des régions (pas obligé)
 </div>
