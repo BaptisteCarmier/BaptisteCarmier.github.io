@@ -22,7 +22,8 @@ For further details on each dataset please check the [datasets page](https://bap
 # A First observation 
 Analyzing the proportion of male and female actors in movies over the years provides valuable insights into the evolution of gender representation in the film industry. This view highlights trends and potential imbalances, helping us track changes and assess progress in achieving gender diversity in casting. A first plot of the evolution of the women proportion in movies over time gives a first intuition on our analysis : 
 
-%% AJOUTER UN GRAPHE plot_evolution_dans_le_temps %%
+{% include gender_proportion_plot.html%} 
+
  
 # Naive Analysis
 ## Un subtitle
