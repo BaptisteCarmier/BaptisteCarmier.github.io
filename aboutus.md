@@ -10,9 +10,9 @@ And we are all part of the EPFL [ADA course](https://epfl-ada.github.io/teaching
 
 | People | Mail | 
 | :------ |:--- |
-| Adélaide Pinel | MAIL ? | 
-| Thomas Lepère | MAIL ? | 
-| Carron Léo | MAIL ? | 
-| Etienne De Labarrière | MAIL ? | 
-| Carmier Baptiste | MAIL ? | 
+| Adélaide Pinel | [adelaide.pinel@epfl.ch](adelaide.pinel@epfl.ch) | 
+| Thomas Lepère | [thomas.lepere@epfl.ch](thomas.lepere@epfl.ch) | 
+| Carron Léo | [leo.carron@epfl.ch](leo.carron@epfl.ch) | 
+| Etienne De Labarrière | [etienne.delabarriere@epfl.ch](etienne.delabarriere@epfl.ch) | 
+| Carmier Baptiste | [baptiste.carmier@epfl.ch](baptiste.carmier@epfl.ch) | 
 
