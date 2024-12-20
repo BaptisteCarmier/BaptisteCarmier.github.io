@@ -102,7 +102,7 @@ PLOT ETIENNE #matchgender.html / #unmatchgender.html
 <div style="text-align: justify">
     By looking at the graph unmatch, men clearly play in more movies than women. And after matching this over-representation was attenuated by matching but still it clearly appears that men play in more movies than women..
     The question is still, even if men are more represented, is this significant or not?
-    The answer is in the ttest! Indeed by doing a ttest between the number of movies made by  men and women after matching we would know that.
+    The answer is in the student's t-test! Indeed by doing a student's t-test between the number of movies made by  men and women after matching we would know that.
 
     The p-value is 0.0072, clearly less than 0.05, which allows us to conclude that over all the time period the men significantly play in more movies than women even after taking into account biases, so men are significantly more represented !
 </div>
@@ -118,9 +118,12 @@ ATTENTION NE PAS OUBLIER LES VALEURS D'ETIENNE
     <br>
     It seems that there would be a probable amelioration for the last generation but how can we know that?
     <br>
-    The answer is in the chi2 test! By making chi2 tests between all generations and one generation against another, by taking into account the number of movies played by men and women (still after matching) by generation would allow us to know if there is a significant change between generations. 
+    The answer is in the chi-squared test! By making chi-squared tests between all generations and one generation against another, by taking into account the number of movies played by men and women (still after matching) by generation would allow us to know if there is a significant change between generations. 
 </div>
 
 
 # Conclusion
 
+<div style="text-align: justify">
+    In conclusion, our investigation into gender representation in cinema has revealed the complex relationship between societal norms and the portrayal of women in film. We have demonstrated that gendered roles and stereotypes continue to shape not only the types of characters women portray but also their visibility and prominence within narratives. Our analysis shows that, while some progress has been made, significant disparities remain, particularly in more conservative regions, where representation is more limited. These findings highlight the ongoing challenges within the industry, yet they also underscore cinema's potential as a catalyst for social change. Moving forward, it is essential to advocate for a more equitable representation in film that reflects the diverse and evolving understanding of gender. The responsibility to shape a more inclusive cinematic landscape lies in the hands of creators and audiences alike.
+</div>
