@@ -128,12 +128,6 @@ ATTENTION NE PAS OUBLIER LES VALEURS D'ETIENNE
     In conclusion, our investigation into gender representation in cinema has revealed the complex relationship between societal norms and the portrayal of women in film. We have demonstrated that gendered roles and stereotypes continue to shape not only the types of characters women portray but also their visibility and prominence within narratives. Our analysis shows that, while some progress has been made, significant disparities remain, particularly in more conservative regions, where representation is more limited. These findings highlight the ongoing challenges within the industry, yet they also underscore cinema's potential as a catalyst for social change. Moving forward, it is essential to advocate for a more equitable representation in film that reflects the diverse and evolving understanding of gender. The responsibility to shape a more inclusive cinematic landscape lies in the hands of creators and audiences alike.
 </div>
 
+{% include matching_movies.html %}     {% include matching_movies.html %}
 
-<div style="display: flex; justify-content: space-between; gap: 10px;">
-  <div style="width: 48%;">
-    {% include matching_movies.html %}
-  </div>
-  <div style="width: 48%;">
-    {% include matching_movies.html %}
-  </div>
-</div>
+
