@@ -84,14 +84,16 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     After matching, we can see that the tendency remains similar but now higher box office revenue is observed for the balanced gender movies. With this analysis, the results support the fact that balanced movie’s casts perform a bit better than unbalanced ones according to their box office. This analysis suggests that balanced gender representation in casts can perform as well as, if not better than, unbalanced ones, offering no economic disadvantage and potentially supporting diversity in casting choices. 
 </div>
 
-<div style="display: flex; justify-content: space-between; gap: 10px; overflow: visible;">
-  <div style="width: 60%;">
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; min-width: 50%;">
     {% include before_matching_movies.html%}
   </div>
-  <div style="width: 60%;">
+  <div style="flex: 1; min-width: 50%;">
     {% include matching_movies.html%}
   </div>
 </div>
+
+
 
 
 #### Matching by actors
