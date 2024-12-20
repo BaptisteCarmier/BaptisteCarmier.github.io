@@ -22,13 +22,17 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
   For further details on each dataset please check the <a href="https://baptistecarmier.github.io/datasets/">datasets page</a>.
 </div>
-<br>
 
 {: .box-note}
 **Note:** Mosts graphs are interactive allowing you to explore details about it.
 
 # Some first observations 
-### Accross time
+
+<div style="text-align: justify;">
+    As already mentioned, gender representation in movies reflect societal norms and thus evolves across time, genres, and regions. By analyzing these categorical values, we may understand how cinema mirrors challenges of gender representation.
+</div>
+
+### Across time
 <div style="text-align: justify;">
     Analyzing the proportion of male and female actors in movies over the years provides valuable insights into the evolution of gender representation in the film industry. This view highlights trends and potential imbalances, helping us track changes and assess progress in achieving gender diversity in casting. A first plot of the evolution of men and women proportion in movies over time gives a first intuition on our analysis : 
 </div>
@@ -50,7 +54,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     There is a clear difference in representation depending on the movie genre. As we expected, this reveals that women are more likely to play in drama or romantic movie, or at least they are more present in those genres rather than in others. This plot also shows that women are way less represented than men regardeless of the movie genre. 
 </div>
 
-<div style="text-alogn: justify">
+<div style="text-alogn: justify;">
     Talking of movie genres, the movie genres was clustered based on a K-means algorithm that cluster all the differents genres in 15 clusters. This was based on the 5 main genres provided in the dataset for each movies, and is more convenient for further analysis. However, the following heatmap shows how each cluster is characterized.
 </div>
 
@@ -81,35 +85,36 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 </div>
 
 # Biases 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     The figure below analyzes the biases that may exist between genders for different features. It displays two boxplots for male and female actors across five key features: Release Date, Box Office (scaled), Runtime, Height (scaled), and Age.
 </div>
 
 {% include boxplot_bias.html%} 
 
-<div style="text-align; justify">
+<div style="text-align; justify;">
     For release date, scaled box office, and runtime, it seems like there are no significant gender biases. Both genders show similar distributions, indicating that over time, the opportunities and success in terms of release years and scaled box office performance are not strongly influenced by gender. Films of different runtime also appear equally distributed between male and female actors.
 </div>
 
-<div style="text-align; justify">
+<div style="text-align; justify;">
     However, the height scaled to the mean height of the gender in the population reveals an interesting bias, as female actors tend to be taller than their average height in the population, while male actors’ heights align more closely with the average for men. This suggests a possible preference for taller women in casting, maybe reflecting some societal beauty standards. For male actors, the median is also higher than in the population but it is not as pronounced.
 </div>
 
-<div style="text-align; justify">
+<div style="text-align; justify;">
     The age demonstrates a clear gender bias, with male actors generally being older than female actors. The age IQR for male actors is larger than for females, with a skew towards older ages, which may reflect the industry's tendency to favor older male actors in leading roles, while 75% of female actors are below 40 years old.
 </div>
 
-<div style="text-align; justify">
+<div style="text-align: justify;">
     Thus, the only biases found were on the age and the height, which are the only two features that we can associate with the physic of the actor, which could reflect some standard of the society that causes these biases.
 </div>
 
-# A deeper analysis
-
-## Matching the data 
+# Analyzing with matching data
+<div style="text-align: justify;">
+    The analysis of gender representation can be pushed further by matching the data, this means removing as much biases as possible to compare two equal things so a men and women of same height, same generation, or regions and which played in the same movie genre.
+</div>
 
 #### Matching by actors
 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     How could we compare men and women's representativeness?
 
     So now we would like to know how we could quantify the representativeness of one actor so as to be able to compare representativeness of men and women actors. The parameter that has been chosen was the number of movies an actor did, indeed the more you’re on the screen the more people watch you and you are represented.
@@ -121,7 +126,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
 {% include unmatchgender.html%}
 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     By looking at the graph unmatch, men clearly play in more movies than women. And after matching this over-representation was attenuated by matching but still it clearly appears that men play in more movies than women..
     The question is still, even if men are more represented, is this significant or not?
     The answer is in the student's t-test! Indeed by doing a student's t-test between the number of movies made by  men and women after matching we would know that.
@@ -129,13 +134,13 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     The p-value is 0.0072, clearly less than 0.05, which allows us to conclude that over all the time period the men significantly play in more movies than women even after taking into account biases, so men are significantly more represented !
 </div>
 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     But is it valid for all periods of time and is there at least a positive evolution ?
 </div>
 
 ATTENTION NE PAS OUBLIER LES VALEURS D'ETIENNE
 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     Waouh ! For the 3 first generation the p-value is smaller than 0.05,  so men are significantly more represented than women. But for the last, it is not the case so the difference between men and women is not significant anymore after taking into account biases for this generation. Even if it doesn’t allow us to conclude that we have reached equality of representation, this is a good sign!
     <br>
     It seems that there would be a probable amelioration for the last generation but how can we know that?
@@ -160,13 +165,13 @@ ATTENTION AJOUTER LES RESULTATS D'ETIENNE
 
 {% include matching_movies.html%}
 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     After matching, we can see that the tendency remains similar but now higher box office revenue is observed for the balanced gender movies. With this analysis, the results support the fact that balanced movie’s casts perform a bit better than unbalanced ones according to their box office. This analysis suggests that balanced gender representation in casts can perform as well as, if not better than, unbalanced ones, offering no economic disadvantage and potentially supporting diversity in casting choices. 
 </div>
 
 # Conclusion
 
-<div style="text-align: justify">
+<div style="text-align: justify;">
     In conclusion, our investigation into gender representation in cinema has revealed the complex relationship between societal norms and the portrayal of women in film. We have demonstrated that gendered roles and stereotypes continue to shape not only the types of characters women portray but also their visibility and prominence within narratives. Our analysis shows that, while some progress has been made, significant disparities remain, particularly in more conservative regions, where representation is more limited. These findings highlight the ongoing challenges within the industry, yet they also underscore cinema's potential as a catalyst for social change. Moving forward, it is essential to advocate for a more equitable representation in film that reflects the diverse and evolving understanding of gender. The responsibility to shape a more inclusive cinematic landscape lies in the hands of creators and audiences alike.
 </div>
 
