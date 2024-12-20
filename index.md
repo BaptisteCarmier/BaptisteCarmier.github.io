@@ -85,10 +85,10 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 </div>
 
 <div style="display: flex; justify-content: space-between; gap: 10px; overflow: visible;">
-  <div style="width: 48%;">
+  <div style="width: 60%;">
     {% include before_matching_movies.html%}
   </div>
-  <div style="width: 48%;">
+  <div style="width: 60%;">
     {% include matching_movies.html%}
   </div>
 </div>
