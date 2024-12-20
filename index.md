@@ -55,7 +55,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 {% include heatmap_female_actors.html%} 
 
 <div style="text-align: justify;">
-    The heatmap's maximum value of 0.40 highlights a significant gap from the equitable fifty-fifty representation, meaning that there’s still today an underrepresentation in the movies across the globe. By using the data from [Our World in Data Population & Demography Explorer], we were able to calculate the proportion of women in each country for the generations from 1950 to today. Then, a representativity index was calculated by dividing the proportion of women in movies by their proportion in the population minus 1. A value of 0 indicates fair representation, while positive and negative values show over- and under-representation. The map illustrates this representativity index by country and generation, as well as the net evolution of this representativity between the first (1950-1975) and last (2000-2020) generation.
+    The heatmap's maximum value of 0.40 highlights a significant gap from the equitable fifty-fifty representation, meaning that there’s still today an underrepresentation in the movies across the globe. By using the data from <a href="https://ourworldindata.org/explorers/population-and-demography">Our World in Data Population & Demography Explorer</a>, we were able to calculate the proportion of women in each country for the generations from 1950 to today. Then, a representativity index was calculated by dividing the proportion of women in movies by their proportion in the population minus 1. A value of 0 indicates fair representation, while positive and negative values show over- and under-representation. The map illustrates this representativity index by country and generation, as well as the net evolution of this representativity between the first (1950-1975) and last (2000-2020) generation.
 </div>
 
 {% include women_representation_map.html%} 
@@ -102,7 +102,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
 {% include matchgender.html%}
 
-{% include unmartchedgender.html%}
+{% include unmartchgender.html%}
 
 <div style="text-align: justify">
     By looking at the graph unmatch, men clearly play in more movies than women. And after matching this over-representation was attenuated by matching but still it clearly appears that men play in more movies than women..
@@ -126,6 +126,7 @@ ATTENTION NE PAS OUBLIER LES VALEURS D'ETIENNE
     The answer is in the chi-squared test! By making chi-squared tests between all generations and one generation against another, by taking into account the number of movies played by men and women (still after matching) by generation would allow us to know if there is a significant change between generations. 
 </div>
 
+ATTENTION AJOUTER LES RESULTATS D'ETIENNE
 
 # Conclusion
 
