@@ -102,7 +102,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
 {% include matchgender.html%}
 
-{% include unmartchgender.html%}
+{% include unmatchgender.html%}
 
 <div style="text-align: justify">
     By looking at the graph unmatch, men clearly play in more movies than women. And after matching this over-representation was attenuated by matching but still it clearly appears that men play in more movies than women..
