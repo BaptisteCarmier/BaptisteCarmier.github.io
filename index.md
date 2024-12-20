@@ -10,7 +10,6 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 <div style="text-align: justify;">
     Gender equality and representation has been a core issue since the 20th and 21th century. Those centuries are characterized by a lot of movement and progress towards women's rights, for example in France the legalization of abortion in 1975. Knowing that it is commonly said that <em>“cinema is not only an art form but also a mirror of society”</em>, the question of gender representation is directly linked to the movie industry and it reflects how we perceive the world. In the movie industry, a lot of norms exist and they could change from country to country because more are conservatives while the others are progressive. Therefore an analysis should be done to assess those norms and to understand to what extent they impact movie creation and what are their potential causes. Mentalities also evolve with time and analyzing those different standards of evolution is necessary.
 </div>
-<br>
 
 ##### Datasets
 
@@ -29,13 +28,18 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 # A First observation 
 
 <div style="text-align: justify;">
-    Analyzing the proportion of male and female actors in movies over the years provides valuable insights into the evolution of gender representation in the film industry. This view highlights trends and potential imbalances, helping us track changes and assess progress in achieving gender diversity in casting. A first plot of the evolution of the women proportion in movies over time gives a first intuition on our analysis : 
+    Analyzing the proportion of male and female actors in movies over the years provides valuable insights into the evolution of gender representation in the film industry. This view highlights trends and potential imbalances, helping us track changes and assess progress in achieving gender diversity in casting. A first plot of the evolution of men and women proportion in movies over time gives a first intuition on our analysis : 
 </div>
 
 {% include gender_proportion_plot.html%} 
 
-# Naive Analysis
+<div style="text-align: justify;">
+    This plots clearly shows that representation of gender have evolved since 1900. Since 1910 women representation have deacresed until 1940. At this point, the proportions are more or less constant until the 90's where women representation in movies slightly increases. This first analysis open the door to a more clichéd analysis based on the genre of the movie. 
+</div>
 
+{% include bar_chart_movie_genre.html%}
+
+{% include heatmap_clusters.html%}
 # Spatial Analysis
 
 <div style="text-align: justify;">
@@ -96,8 +100,9 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     And we can show you the difference before and after matching
 </div>
 
-PLOT ETIENNE #matchgender.html / #unmatchgender.html
+{% include matchgender.html%}
 
+{% include unmartchedgender.html%}
 
 <div style="text-align: justify">
     By looking at the graph unmatch, men clearly play in more movies than women. And after matching this over-representation was attenuated by matching but still it clearly appears that men play in more movies than women..

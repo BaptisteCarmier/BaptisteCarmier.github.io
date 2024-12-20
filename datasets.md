@@ -33,4 +33,10 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     </div>
     <br>
   </li>
+  <li>
+    <div style="text-align: justify;">
+      A dataset associating the country with its code (FRA for France, etc) is used for the interactive plot of the map of the world. It can be found on this <a href="https://github.com/johan/world.geo.json/tree/master">repository</a>.
+    </div>
+    <br>
+  </li>
 </ul>
