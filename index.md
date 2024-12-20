@@ -7,10 +7,12 @@ cover-img: /assets/img/header_ada.png
 author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne De Labarrière
 ---
 
+# Abstract
 <div style="text-align: justify;">
     Gender equality and representation has been a core issue since the 20th and 21th century. Those centuries are characterized by a lot of movement and progress towards women's rights, for example in France the legalization of abortion in 1975. Knowing that it is commonly said that <em>“cinema is not only an art form but also a mirror of society”</em>, the question of gender representation is directly linked to the movie industry and it reflects how we perceive the world. In the movie industry, a lot of norms exist and they could change from country to country because more are conservatives while the others are progressive. Therefore an analysis should be done to assess those norms and to understand to what extent they impact movie creation and what are their potential causes. Mentalities also evolve with time and analyzing those different standards of evolution is necessary.
 </div>
 <br>
+
 ##### Datasets
 
 <div style="text-align: justify;">
@@ -20,13 +22,13 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
   For further details on each dataset please check the <a href="https://baptistecarmier.github.io/datasets/">datasets page</a>.
 </div>
-
+<br>
 
 {: .box-note}
 **Note:** Mosts graphs are interactive allowing you to explore details about it.
 
-# A First observation 
-
+# Some first observations 
+### Accross time
 <div style="text-align: justify;">
     Analyzing the proportion of male and female actors in movies over the years provides valuable insights into the evolution of gender representation in the film industry. This view highlights trends and potential imbalances, helping us track changes and assess progress in achieving gender diversity in casting. A first plot of the evolution of men and women proportion in movies over time gives a first intuition on our analysis : 
 </div>
@@ -34,7 +36,12 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 {% include gender_proportion_plot.html%} 
 
 <div style="text-align: justify;">
-    This plots clearly shows that representation of gender have evolved since 1900. Since 1910 women representation have deacresed until 1940. At this point, the proportions are more or less constant until the 90's where women representation in movies slightly increases. This first analysis open the door to a more clichéd analysis based on the genre of the movie, expecting more women in drama or romantic movies than in other genres. 
+    This plots clearly shows that representation of gender have evolved since 1900. Since 1910 women representation have deacresed until 1940. At this point, the proportions are more or less constant until the 90's where women representation in movies slightly increases. 
+</div>
+
+### Among movie genres
+<div style="text-align: justify;">
+    This first analysis open the door to a more clichéd analysis based on the genre of the movie, expecting more women in drama or romantic movies than in other genres. 
 </div>
 
 {% include bar_chart_movie_genre.html%}
@@ -49,7 +56,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
 {% include heatmap_clusters.html%}
 
-# Spatial Analysis
+### Among geographical regions
 
 <div style="text-align: justify;">
     This first plot shows the distribution of male and female actors by region, highlighting North America, Asia, and Western Europe as the most represented regions in the dataset. Other regions have significantly fewer entries, indicating a potential underrepresentation of those areas. This uneven data distribution could reflect disparities in global cinema production, with some countries (like the USA) having large movie markets. At first glance, there seem to be no significant regional differences in gender distribution. We'll go further in the analysis by looking at a temporal scale.
@@ -96,27 +103,9 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     Thus, the only biases found were on the age and the height, which are the only two features that we can associate with the physic of the actor, which could reflect some standard of the society that causes these biases.
 </div>
 
-# Better Analysis
+# A deeper analysis
 
 ## Matching the data 
-#### Matching by movies
-
-<div style="text-align: justify;">
-    Why have unbalanced casts ? 
-    Since we observed that the women are underrepresented in the movie industry, we want to analyze if there is an economic reason for this imbalance in the actor casts. To begin, we get an insight on whether movies with heterogeneous cast distribution perform better than balanced one by having a look to the plot of the distribution of the movies’ box office for these two groups : 
-</div>
-
-{% include before_matching_movies.html%}
-
-<div style="text-align: justify;">
-    The distribution appears more or less similar, with a slight tendency for higher box office revenues in movies with unbalanced casts. To better analyze the impact of gender balance in movie casts, we use propensity score matching to compare movies that are more “comparable” according to their characteristics. This method ensures that the two groups are comparable by creating a matched dataset where we can more accurately assess differences in outcomes, such as box office success, that may be influenced by the gender balance of the cast. The plot below shows the same distribution but now with matched movies : 
-</div>
-
-{% include matching_movies.html%}
-
-<div style="text-align: justify">
-    After matching, we can see that the tendency remains similar but now higher box office revenue is observed for the balanced gender movies. With this analysis, the results support the fact that balanced movie’s casts perform a bit better than unbalanced ones according to their box office. This analysis suggests that balanced gender representation in casts can perform as well as, if not better than, unbalanced ones, offering no economic disadvantage and potentially supporting diversity in casting choices. 
-</div>
 
 #### Matching by actors
 
@@ -155,6 +144,25 @@ ATTENTION NE PAS OUBLIER LES VALEURS D'ETIENNE
 </div>
 
 ATTENTION AJOUTER LES RESULTATS D'ETIENNE
+
+#### Matching by movies
+
+<div style="text-align: justify;">
+    Why have unbalanced casts ? 
+    Since we observed that the women are underrepresented in the movie industry, we want to analyze if there is an economic reason for this imbalance in the actor casts. To begin, we get an insight on whether movies with heterogeneous cast distribution perform better than balanced one by having a look to the plot of the distribution of the movies’ box office for these two groups : 
+</div>
+
+{% include before_matching_movies.html%}
+
+<div style="text-align: justify;">
+    The distribution appears more or less similar, with a slight tendency for higher box office revenues in movies with unbalanced casts. To better analyze the impact of gender balance in movie casts, we use propensity score matching to compare movies that are more “comparable” according to their characteristics. This method ensures that the two groups are comparable by creating a matched dataset where we can more accurately assess differences in outcomes, such as box office success, that may be influenced by the gender balance of the cast. The plot below shows the same distribution but now with matched movies : 
+</div>
+
+{% include matching_movies.html%}
+
+<div style="text-align: justify">
+    After matching, we can see that the tendency remains similar but now higher box office revenue is observed for the balanced gender movies. With this analysis, the results support the fact that balanced movie’s casts perform a bit better than unbalanced ones according to their box office. This analysis suggests that balanced gender representation in casts can perform as well as, if not better than, unbalanced ones, offering no economic disadvantage and potentially supporting diversity in casting choices. 
+</div>
 
 # Conclusion
 
