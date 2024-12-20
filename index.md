@@ -38,11 +38,27 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 
 # Spatial Analysis
 
+<div style="text-align: justify;">
+    This first plot shows the distribution of male and female actors by region, highlighting North America, Asia, and Western Europe as the most represented regions in the dataset. Other regions have significantly fewer entries, indicating a potential underrepresentation of those areas. This uneven data distribution could reflect disparities in global cinema production, with some countries (like the USA) having large movie markets. At first glance, there seem to be no significant regional differences in gender distribution. We'll go further in the analysis by looking at a temporal scale.
+</div>
+
 {% include bar_chart_region_actors.html%} 
+
+<div style="text-align: justify;">
+    A temporal analysis of the trends of the representation was made and the heatmap below reveals how the proportion of female actors varies across regions and 25-year generational periods. Here we observe that in some regions like East Europa, the female representation seems to have increased quite significantly over the past century. For North America and Western Europe, the regions with the most data, it shows a gradual rise in female representation, except for a surprisingly high representation in the 1900–1925 period.
+</div>
 
 {% include heatmap_female_actors.html%} 
 
+<div style="text-align: justify;">
+    The heatmap's maximum value of 0.40 highlights a significant gap from the equitable fifty-fifty representation, meaning that there’s still today an underrepresentation in the movies across the globe. By using the data from [Our World in Data Population & Demography Explorer], we were able to calculate the proportion of women in each country for the generations from 1950 to today. Then, a representativity index was calculated by dividing the proportion of women in movies by their proportion in the population minus 1. A value of 0 indicates fair representation, while positive and negative values show over- and under-representation. The map illustrates this representativity index by country and generation, as well as the net evolution of this representativity between the first (1950-1975) and last (2000-2020) generation.
+</div>
+
 {% include women_representation_map.html%} 
+
+<div style="text-align: justify;">
+    No surprise here! All countries are shaded in red, indicating the persistent overrepresentation of male actors in movies over time. The only exception is Indonesia during the last generation, having an overrepresentation of female actors! However, it’s interesting to look at the net evolution as if we zoom in on Europe, most of the countries have evolved toward a more equal representation of the genders. In conclusion, all these green-shaded countries indicate that while women are still underrepresented in movies, it is less marked than it was fifty years ago.
+</div>
 
 # Biases 
 
@@ -90,7 +106,6 @@ PLOT ETIENNE #matchgender.html / #unmatchgender.html
 
     The p-value is 0.0072, clearly less than 0.05, which allows us to conclude that over all the time period the men significantly play in more movies than women even after taking into account biases, so men are significantly more represented !
 </div>
-<br>
 
 <div style="text-align: justify">
     But is it valid for all periods of time and is there at least a positive evolution ?
