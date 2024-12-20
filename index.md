@@ -127,7 +127,7 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     The question is still, even if men are more represented, is this significant or not?
     The answer is in the student's t-test! Indeed by doing a student's t-test between the number of movies made by  men and women after matching we would know that.
 
-    The p-value is 0.0072, clearly less than 0.05, which allows us to conclude that over all the time period the men significantly play in more movies than women even after taking into account biases, so men are significantly more represented !
+    The p-value is 0.00258, clearly less than 0.05, which allows us to conclude that over all the time period the men significantly play in more movies than women even after taking into account biases, so men are significantly more represented !
 </div>
 
 <div style="text-align: justify;">
