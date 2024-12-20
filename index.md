@@ -43,7 +43,12 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
     There is a clear difference in representation depending on the movie genre. As we expected, this reveals that women are more likely to play in drama or romantic movie, or at least they are more present in those genres rather than in others. This plot also shows that women are way less represented than men regardeless of the movie genre. 
 </div>
 
+<div style="text-alogn: justify">
+    Talking of movie genres, the movie genres was clustered based on a K-means algorithm that cluster all the differents genres in 15 clusters. This was based on the 5 main genres provided in the dataset for each movies, and is more convenient for further analysis. However, the following heatmap shows how each cluster is characterized.
+</div>
+
 {% include heatmap_clusters.html%}
+
 # Spatial Analysis
 
 <div style="text-align: justify;">
@@ -69,8 +74,27 @@ author: Carmier Baptiste, Léo Carron, Thomas Lepère, Adélaide Pinel, Etienne 
 </div>
 
 # Biases 
+<div style="text-align: justify">
+    The figure below analyzes the biases that may exist between genders for different features. It displays two boxplots for male and female actors across five key features: Release Date, Box Office (scaled), Runtime, Height (scaled), and Age.
+</div>
 
 {% include boxplot_bias.html%} 
+
+<div style="text-align; justify">
+    For release date, scaled box office, and runtime, it seems like there are no significant gender biases. Both genders show similar distributions, indicating that over time, the opportunities and success in terms of release years and scaled box office performance are not strongly influenced by gender. Films of different runtime also appear equally distributed between male and female actors.
+</div>
+
+<div style="text-align; justify">
+    However, the height scaled to the mean height of the gender in the population reveals an interesting bias, as female actors tend to be taller than their average height in the population, while male actors’ heights align more closely with the average for men. This suggests a possible preference for taller women in casting, maybe reflecting some societal beauty standards. For male actors, the median is also higher than in the population but it is not as pronounced.
+</div>
+
+<div style="text-align; justify">
+    The age demonstrates a clear gender bias, with male actors generally being older than female actors. The age IQR for male actors is larger than for females, with a skew towards older ages, which may reflect the industry's tendency to favor older male actors in leading roles, while 75% of female actors are below 40 years old.
+</div>
+
+<div style="text-align; justify">
+    Thus, the only biases found were on the age and the height, which are the only two features that we can associate with the physic of the actor, which could reflect some standard of the society that causes these biases.
+</div>
 
 # Better Analysis
 
